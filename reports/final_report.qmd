@@ -18,4 +18,9 @@ df = pd.read_csv(
 )
 
 df.head()
+
+points_mean = df["PTS"].mean()
 ```
+
+the mean of ppg is '{python} df ["PTS"].mean()'
+the mean of ppg is '{python} points_mean'.
