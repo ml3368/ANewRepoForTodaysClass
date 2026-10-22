@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="final_report_files/libs/clipboard/clipboard.min.js"></script>
+<script src="final_report_files/libs/clipboard/clipboard.min.js"></script>
 <script src="final_report_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="final_report_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="final_report_files/libs/quarto-html/popper.min.js"></script>
@@ -76,9 +76,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="final_report_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="final_report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="final_report_files/libs/bootstrap/bootstrap-badea9d7f631b609ca82bbf21f37a353.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 </head>
@@ -117,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>This report demonstrates a reproducible statistical workflow.</p>
-<div id="c18c44b8" class="cell" data-execution_count="1">
+<div id="64d94d4f" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -125,75 +122,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"data/processed/analysis_data.csv"</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Player</th>
-<th data-quarto-table-cell-role="th">Team</th>
-<th data-quarto-table-cell-role="th">G</th>
-<th data-quarto-table-cell-role="th">PTS</th>
-<th data-quarto-table-cell-role="th">TRB</th>
-<th data-quarto-table-cell-role="th">AST</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
-<td>Shai Gilgeous-Alexander</td>
-<td>OKC</td>
-<td>76.0</td>
-<td>32.7</td>
-<td>5.0</td>
-<td>6.4</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
-<td>Giannis Antetokounmpo</td>
-<td>MIL</td>
-<td>67.0</td>
-<td>30.4</td>
-<td>11.9</td>
-<td>6.5</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">2</th>
-<td>Nikola Jokić</td>
-<td>DEN</td>
-<td>70.0</td>
-<td>29.6</td>
-<td>12.7</td>
-<td>10.2</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">3</th>
-<td>Luka Dončić</td>
-<td>2TM</td>
-<td>50.0</td>
-<td>28.2</td>
-<td>8.2</td>
-<td>7.7</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">4</th>
-<td>Luka Dončić</td>
-<td>DAL</td>
-<td>22.0</td>
-<td>28.1</td>
-<td>8.3</td>
-<td>7.8</td>
-</tr>
-</tbody>
-</table>
-
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>df.head()</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>points_mean <span class="op">=</span> df[<span class="st">"PTS"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</div>
-</div>
+<p>the mean of ppg is ‘{python} df [“PTS”].mean()’ the mean of ppg is ‘{python} points_mean’.</p>
 </section>
 
 </main>
